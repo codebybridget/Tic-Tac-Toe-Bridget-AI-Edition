@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe: Bridget AI Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎮 Tic Tac Toe: Bridget AI Edition</h1>
+
+  <div class="controls">
+    <label for="mode">Mode:</label>
+    <select id="mode">
+      <option value="human">Human vs Human</option>
+      <option value="ai" selected>Human vs Bridget</option>
+    </select>
+
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard </option>
+    </select>
+  </div>
+
+  <div class="scoreboard">
+    <div>🧑 Player X: <span id="xScore">0</span></div>
+    <div id="oLabel">🤖 Bridget O: <span id="oScore">0</span></div>
+  </div>
+
+  <div class="board" id="board"></div>
+
+  <div id="status">Player X's turn</div>
+
+  <div class="buttons">
+    <button id="reset">🔄 New Game</button>
+    <button id="resetScores">🧹 Reset Scores</button>
+    <button id="shareBtn">📤 Share</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

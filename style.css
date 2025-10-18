@@ -1,0 +1,80 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.controls, .scoreboard, .buttons {
+  margin-bottom: 20px;
+}
+
+select, button {
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  background: #1e293b;
+  border-radius: 12px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cell:hover {
+  background: #334155;
+}
+
+.win {
+  background: #22c55e !important;
+  color: #fff;
+}
+
+#status {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#shareBtn {
+  background: #f59e0b;
+  color: #000;
+}
+
+#shareBtn:hover {
+  background: #d97706;
+  transform: scale(1.07);
+}
